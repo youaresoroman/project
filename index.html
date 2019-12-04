@@ -1,19 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
         <title></title>
-        <script
-			  src="https://code.jquery.com/jquery-3.4.1.js"
-			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-			  crossorigin="anonymous"></script>
-        <script type="text/javascript" src="app.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="profile.js"></script>
+        <script type="text/javascript" src="useragent.js"></script>
+        <link rel="stylesheet" href="page.css">
     </head>
     <body>
-        <div class="header">Header</div>
-        <div class="active_area">Active area
-            <div id="result"></div>
-            <button onclick="play()">click me</button>
+        <div class="head_block">Header</div>
+        <div class="profile_block">
+            <div class="profile_head"></div>
+            <div class="profile_foot">
+                <div class="profile_foot_greatings">My name is</div>
+                <div id="my_name">Name name</div>
+            </div>
         </div>
-        <div class="footer">Footer</div>
+        <div class="foot_block">Footer</div>
     </body>
 </html>
