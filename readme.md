@@ -3,6 +3,8 @@
 
 # TODO's
 
-* Figure out how to use api
+## Roman
 
-# What is done?
+## Michal
+
+## Volodimir
