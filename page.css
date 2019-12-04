@@ -9,12 +9,30 @@ body {
 	flex-direction: column;
 }
 
-.head_block {
+.page {
     width: 80%;
     background-color: darkgrey;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+	display: -webkit-flex;
+  	-webkit-align-items: stretch;
+ 	align-items: stretch;
+	flex-direction: row;
+}
+
+#my_name {
+    
+}
+
+.buttons {
+    text-align: right;
 }
 
 .profile_block {
     width: 80%;
     background-color: darkgrey;
 }
+
