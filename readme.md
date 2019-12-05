@@ -44,16 +44,20 @@ Social profiles buttons style
 
 ### Javascript
 [Clean code](https://github.com/ryanmcdermott/clean-code-javascript)
-[JQuery events](https://api.jquery.com/category/events/)
-[JQuery manipulation](https://api.jquery.com/category/manipulation/)
-[JQuery GET](https://api.jquery.com/jQuery.get/)
-[JQuery POST](https://api.jquery.com/jQuery.post)
+
+##### JQuery
+[Events](https://api.jquery.com/category/events/)
+[Manipulation](https://api.jquery.com/category/manipulation/)
+[GET](https://api.jquery.com/jQuery.get/)
+[POST](https://api.jquery.com/jQuery.post)
 
 #### Animation
 [Tutorial](https://www.w3schools.com/js/js_htmldom_animate.asp)
 [Tutorial 1](https://javascript.info/js-animation)
 [Tutorial 2](https://www.tutorialspoint.com/javascript/javascript_animation.htm)
-[JQuery effects](https://api.jquery.com/category/effects/)
+
+##### JQuery
+[Effects](https://api.jquery.com/category/effects/)
 
 ## Templates and other
 [Libraries](https://graygrids.com/best-css-javascript-animation-libraries/)
