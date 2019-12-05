@@ -1,4 +1,13 @@
-//document.getElementById("content").innerHTML =
+/* 
+//To get DOM element:
+    document.getElementById("content")
+//To put data inside DOM element
+    document.getElementById("content").innerHTML = 'data'
+
+Leave comment for every function you make
+Look out for clean code tutorial!!
+*/
+
 
 document.addEventListener("DOMContentLoaded", function(){
     $.get( "https://randomuser.me/api/", function( data ) {
@@ -16,5 +25,4 @@ function favicon(url) {
     link.rel = 'shortcut icon';
     link.href = url;
     document.getElementsByTagName('head')[0].appendChild(link);
-
 }
