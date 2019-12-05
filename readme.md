@@ -24,12 +24,12 @@ Page animations
 
 ## Volodimir
 ### CSS
-#### *_profile.js_*
-Parser for random identity generator api
-
-### Javascript
 #### *_social.css_*
 Social profiles buttons style
+
+### Javascript
+#### *_profile.js_*
+Parser for random identity generator api
 
 # Links
 ## Preview pages
