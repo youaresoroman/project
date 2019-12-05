@@ -32,42 +32,42 @@ Parser for random identity generator api
 # Links
 ## Preview pages
 ### v-ie
-[s215847](http://v-ie.uek.krakow.pl/~s215847/project/)
+* [s215847](http://v-ie.uek.krakow.pl/~s215847/project/)
 
 ## General
 ### CSS
-[Clean code](https://www.10bestdesign.com/dirtymarkup/css/)
-[Tutorial](https://www.w3schools.com/Css/)
-[Reference](https://www.w3schools.com/cssref/)
+* [Clean code](https://www.10bestdesign.com/dirtymarkup/css/)
+* [Tutorial](https://www.w3schools.com/Css/)
+* [Reference](https://www.w3schools.com/cssref/)
 
 ### Javascript
-[Clean code](https://github.com/ryanmcdermott/clean-code-javascript)
+* [Clean code](https://github.com/ryanmcdermott/clean-code-javascript)
 
 ##### JQuery
-[Events](https://api.jquery.com/category/events/)
-[Manipulation](https://api.jquery.com/category/manipulation/)
-[GET](https://api.jquery.com/jQuery.get/)
-[POST](https://api.jquery.com/jQuery.post)
+* [Events](https://api.jquery.com/category/events/)
+* [Manipulation](https://api.jquery.com/category/manipulation/)
+* [GET](https://api.jquery.com/jQuery.get/)
+* [POST](https://api.jquery.com/jQuery.post)
 
 #### Animation
-[Tutorial](https://www.w3schools.com/js/js_htmldom_animate.asp)
-[Tutorial 1](https://javascript.info/js-animation)
-[Tutorial 2](https://www.tutorialspoint.com/javascript/javascript_animation.htm)
+* [Tutorial](https://www.w3schools.com/js/js_htmldom_animate.asp)
+* [Tutorial 1](https://javascript.info/js-animation)
+* [Tutorial 2](https://www.tutorialspoint.com/javascript/javascript_animation.htm)
 
 ##### JQuery
-[Effects](https://api.jquery.com/category/effects/)
+* [Effects](https://api.jquery.com/category/effects/)
 
-## Templates and other
-[Libraries](https://graygrids.com/best-css-javascript-animation-libraries/)
+## CSS/JS animation libraries and templates
+* [CSS and JS animation libraries](https://graygrids.com/best-css-javascript-animation-libraries/)
 
 ### CSS
-[Tricks](https://css-tricks.com/)
-[Templates](https://templated.co/)
+* [Tricks](https://css-tricks.com/)
+* [Templates](https://templated.co/)
 
 ### Javascript
-[Libraries](https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59)
-[Templates](https://www.templatemonster.com/blog/full-javascript-animated-website-templates/)
+* [Libraries](https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59)
+* [Templates](https://www.templatemonster.com/blog/full-javascript-animated-website-templates/)
 
 ## Validation
 ### CSS
-[Code validation](https://jigsaw.w3.org/css-validator/)
+* [Code validation](https://jigsaw.w3.org/css-validator/)
