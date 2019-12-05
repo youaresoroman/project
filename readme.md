@@ -1,4 +1,4 @@
-﻿# Project description
+# Project description
 
 # Project's TODO List
 ## Roman
@@ -9,7 +9,7 @@
 * *_useragent.js_*
 useragent api parser 
 
-## Michal
+## Michał
 ### CSS
 * *_style.css_*
 page style
@@ -36,6 +36,7 @@ Social profiles buttons style
 ### CSS
 [Tutorial](https://www.w3schools.com/Css/)
 [Reference](https://www.w3schools.com/cssref/)
+
 ### Javascript
 #### Animation
 [Tutorial](https://www.w3schools.com/js/js_htmldom_animate.asp)
