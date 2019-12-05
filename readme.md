@@ -7,34 +7,24 @@
 
 ### Javascript
 * *_useragent.js_*
-Description
----
 useragent api parser 
 
 ## Michal
 ### CSS
 * *_style.css_*
-Description
----
 page style
 
 ### Javascript
 * *_style.js_*
-Description
----
 page animations
 
 ## Volodimir
 ### CSS
 * *_profile.js_*
-Description
----
 Parser for random identity generator api
 
 ### Javascript
 * *_social.css_*
-Description
----
 Social profiles buttons style
 
 # Links
