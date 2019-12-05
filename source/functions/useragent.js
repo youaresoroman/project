@@ -6,4 +6,7 @@
 
 Leave comment for every function you make
 Look out for clean code tutorial!!
+
+For functions leave console log, especially for error handling
+
 */

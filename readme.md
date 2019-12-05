@@ -1,13 +1,11 @@
 # Project description
+## Example preview
 
 # Project's TODO List
 ## Roman
 ### HTML DOM
 #### *_index.html_*
 Index page for project
-
-#### *_example.html_*
-Page for example of finished work
 
 ### Javascript
 #### *_useragent.js_*
@@ -19,7 +17,7 @@ Useragent api parser
 Page style
 
 ### Javascript
-#### *_style.js_*
+#### *_animation.js_*
 Page animations
 
 ## Volodimir
