@@ -3,28 +3,28 @@
 # Project's TODO List
 ## Roman
 ### HTML DOM
-* *_index.html_*
+#### *_index.html_*
 
 ### Javascript
-* *_useragent.js_*
-useragent api parser 
+#### *_useragent.js_*
+Useragent api parser 
 
 ## Michał
 ### CSS
-* *_style.css_*
-page style
+#### *_style.css_*
+Page style
 
 ### Javascript
-* *_style.js_*
-page animations
+#### *_style.js_*
+Page animations
 
 ## Volodimir
 ### CSS
-* *_profile.js_*
+#### *_profile.js_*
 Parser for random identity generator api
 
 ### Javascript
-* *_social.css_*
+#### *_social.css_*
 Social profiles buttons style
 
 # Links
