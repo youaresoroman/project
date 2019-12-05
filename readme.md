@@ -27,8 +27,6 @@ Parser for random identity generator api
 #### *_social.css_*
 Social profiles buttons style
 
-
-
 # Links
 ## Preview pages
 ### v-ie
