@@ -1,15 +1,31 @@
 # Project description
 ## Example preview
+### Desktop
+
+### Mobile
 
 # Project's TODO List
 ## Roman
 ### HTML DOM
+#### *_examples_*
+Images of page example 
+
+* *_desktop_*
+
+* *_mobile_*
+
+#### *_readme.md_*
+Readme and TODO section
+
 #### *_index.html_*
 Index page for project
 
 ### Javascript
 #### *_useragent.js_*
-Useragent api parser 
+Useragent api parser
+1. ~~Gathering data sequence~~
+2. ~~Formatted output on page~~
+3. Styled output
 
 ## Michał
 ### CSS
@@ -24,6 +40,9 @@ Page animations
 ### CSS
 #### *_social.css_*
 Social profiles buttons style
+
+#### *_software.css_*
+Software icons for visitor section
 
 ### Javascript
 #### *_profile.js_*
@@ -57,12 +76,14 @@ Parser for random identity generator api
 ##### JQuery
 * [Effects](https://api.jquery.com/category/effects/)
 
-## CSS/JS animation libraries and templates
+## Animation libraries and templates
 * [CSS and JS animation libraries](https://graygrids.com/best-css-javascript-animation-libraries/)
+* [Bootstrap documentation](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 
 ### CSS
 * [Tricks](https://css-tricks.com/)
 * [Templates](https://templated.co/)
+* [Icons](http://astronautweb.co/snippet/font-awesome/)
 
 ### Javascript
 * [Libraries](https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59)

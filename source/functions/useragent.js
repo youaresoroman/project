@@ -10,3 +10,9 @@ Look out for clean code tutorial!!
 For functions leave console log, especially for error handling
 
 */
+
+document.addEventListener("DOMContentLoaded", function(){
+    $.get( "https://yankowski.eu/api/v0/ua", function( data ) {
+        document.getElementById("software").innerHTML = "<p>" + data.software + " version " + data.software_value + "</p>Your platform is " + data.os_name + ' ' + data.os_name_value +"(" + data.os_platform + ")";
+    }, "json" );
+});
