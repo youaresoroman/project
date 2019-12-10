@@ -84,6 +84,7 @@ Parser for random identity generator api
 * [Tricks](https://css-tricks.com/)
 * [Templates](https://templated.co/)
 * [Icons](http://astronautweb.co/snippet/font-awesome/)
+* [Icon example](https://www.w3schools.com/howto/howto_css_social_media_buttons.asp)
 
 ### Javascript
 * [Libraries](https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59)
