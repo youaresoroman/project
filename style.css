@@ -1,0 +1,54 @@
+/* Everithing is for rewrite */
+
+
+body {
+    
+	font-family: :Rubik;
+    font-size: 110%;
+    
+    display: flex;
+	display: -webkit-flex;
+  	-webkit-align-items: center;
+ 	align-items: center;
+    flex-direction: column;
+    
+    margin-top: 15%;
+    margin-bottom: 15%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color: white;
+}
+
+.page {
+    width: 70%;
+    background-color: rgb(247, 231, 237);
+    
+    border-width: medium;
+    border-radius: 15px
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+	display: -webkit-flex;
+  	-webkit-align-items: stretch;
+ 	align-items: stretch;
+    flex-direction: row;
+    border-width: medium;
+    border-radius: 5px;
+   
+}
+
+.buttons {
+    text-align: center;
+    
+}
+
+.profile_block {
+    width: 120%;
+    background-color: rgb(39, 220, 226);
+    background-image: document.querySelector("link[rel*='icon']") || document.createElement('link');
+  	
+}
+
+.
