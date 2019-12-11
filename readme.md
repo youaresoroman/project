@@ -27,6 +27,10 @@ Useragent api parser
 2. ~~Formatted output on page~~
 3. Styled output
 
+### CSS
+#### *_software.css_*
+Software icons
+
 ## Michał
 ### CSS
 #### *_style.css_*

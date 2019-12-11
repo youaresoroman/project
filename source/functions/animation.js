@@ -10,3 +10,7 @@ Look out for clean code tutorial!!
 For functions leave console log, especially for error handling
 
 */
+
+function visitor() {
+    alert('Light up viewers info block');
+}

@@ -1,9 +1,6 @@
-/* Everithing is for rewrite */
-
-
 body {
     
-	font-family: :Rubik;
+	font-family: Rubik;
     font-size: 110%;
     
     display: flex;
@@ -50,5 +47,3 @@ body {
     background-image: document.querySelector("link[rel*='icon']") || document.createElement('link');
   	
 }
-
-.
