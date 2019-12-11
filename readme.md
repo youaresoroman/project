@@ -45,9 +45,6 @@ Page animations
 #### *_social.css_*
 Social profiles buttons style
 
-#### *_software.css_*
-Software icons for visitor section
-
 ### Javascript
 #### *_profile.js_*
 Parser for random identity generator api
@@ -93,6 +90,8 @@ Parser for random identity generator api
 ### Javascript
 * [Libraries](https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59)
 * [Templates](https://www.templatemonster.com/blog/full-javascript-animated-website-templates/)
+* [Loading example](https://blog.hellojs.org/create-a-very-basic-loading-screen-using-only-javascript-css-3cf099c48b19)
+* [Loading example 1](https://smallenvelop.com/display-loading-icon-page-loads-completely/)
 
 ## Validation
 ### CSS
