@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         output = output + software + " version " + version;
 
-        output = output + " and your platform is " + os;
+        output = output + " and your platform is " + os + ' ';
 
         if (os == 'Linux'){
             output = output + "<i class='fab fa-linux' style='font-size:36px'></i>";
