@@ -16,9 +16,17 @@ Images of page example
 
 #### *_readme.md_*
 Readme and TODO section
+1. ~~Document structure~~
+2. ~~Links for info~~
 
 #### *_index.html_*
 Index page for project
+1. ~~Document DOM structure~~
+2. ~~Comments for DOM objects~~
+3. ~~Naming div's~~
+
+#### *_Software icons_*
+Gathering icons
 
 ### Javascript
 #### *_useragent.js_*
@@ -26,10 +34,6 @@ Useragent api parser
 1. ~~Gathering data sequence~~
 2. ~~Formatted output on page~~
 3. Styled output
-
-### CSS
-#### *_software.css_*
-Software icons
 
 ## Michał
 ### CSS
