@@ -23,8 +23,8 @@ body {
     left:       0;
     height:     100%;
     width:      100%;
-    background: rgba( 245, 245, 245, .9 ) 
-                url('http://i.stack.imgur.com/FhHRx.gif') 
+    background: rgba( 255, 255, 255, .9 ) 
+                url('../../source/assets/gif/loading.gif') /*http://i.stack.imgur.com/FhHRx.gif*/ 
                 50% 50% 
                 no-repeat;
 }
@@ -42,10 +42,11 @@ body.loading .modal {
 }
 
 .page {
-    width: 70%;
+    width: 95%;
     background-color: rgb(17, 17, 17);
+    padding: 10px;
     border-width: medium;
-    border-radius: 15px
+    border-radius: 10px
 }
 
 .menu {
@@ -57,7 +58,6 @@ body.loading .modal {
     flex-direction: row;
     border-width: medium;
     border-radius: 5px;
-   
 }
 
 .buttons {
@@ -66,13 +66,11 @@ body.loading .modal {
 }
 
 .profile_block {
-    width: 120%;
+    width: 100%;
     background-color: rgb(39, 220, 226);
-    background-image: document.querySelector("link[rel*='icon']") || document.createElement('link');
-    background-position: :left top;
+    background-position: left top;
     background-repeat: no-repeat;
     display: inline;
-    
     height: 10px;
 }
 

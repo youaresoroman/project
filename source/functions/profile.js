@@ -42,5 +42,5 @@ function email() {
 }
 
 function favicon(url) {
-    $("head").append("<link rel='shortcut icon' type='image/jpg' href='" + url + "/>");
+    $("head").append("<link rel='shortcut icon' type='image/jpg' href='" + url + "'/>");
 }

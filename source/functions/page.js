@@ -2,14 +2,22 @@
 All functions for "DOMContentLoaded" event
 */
 
+//When content loaded
 document.addEventListener("DOMContentLoaded", function(){
-    loadingactivity(true);
-    loadCSS(daypart());
     fetchuserdata();
 });
 
+//On the start of page loading
+document.addEventListener('readystatechange', () => {
+    if (document.readyState == 'interactive') {
+        loadCSS(daypart());
+        loadingactivity(true);
+    }
+});
+
+//When page is fully loaded
 window.addEventListener('load', () => {
-    loadingactivity(false);
+    var timer = setInterval(loadingactivity(false), 2000);
 });
 
 function daypart() {
