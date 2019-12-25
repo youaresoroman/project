@@ -47,11 +47,11 @@ Page animations
 ## Volodimir
 ### CSS
 #### *_social.css_*
-Social profiles buttons style
+Сделать стиль кнопок для перехода в соцсети, пример уже есть блять
 
 ### Javascript
 #### *_profile.js_*
-Parser for random identity generator api
+Сделать так чтобы блять данные с апи появились на странице (что будет на странице уже на твое усмотрение)
 
 # Links
 ## Preview pages
