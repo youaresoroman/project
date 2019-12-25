@@ -24,6 +24,7 @@ function fetchuserdata(){
 function filluserdata(user) {
     document.getElementById("my_name").innerHTML = user.name.first + ' ' + user.name.last;
     document.getElementById("social").innerHTML = socialprofiles(user.login.username);
+    document.getElementById("photo_frame").innerHTML = "<img src='https://randomuser.me/api/portraits/women/18.jpg'></img>";
 }
 
 //Constructor for social profile links
