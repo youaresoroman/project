@@ -11,13 +11,19 @@ For functions leave console log, especially for error handling
 
 */
 
-//Make update to favicon
-function favicon(url) { 
-    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type = 'image/jpg';
-    link.rel = 'shortcut icon';
-    link.href = url;
-    document.getElementsByTagName('head')[0].appendChild(link);
+//Fetching user data from API
+function fetchuserdata(){
+    $.get( "https://randomuser.me/api/", function( data ) {
+        var user = data['results'][0];
+        filluserdata(user);
+        favicon(user.picture.medium);
+    }, "json" );
+}
+
+//Filling page with user data
+function filluserdata(user) {
+    document.getElementById("my_name").innerHTML = user.name.first + ' ' + user.name.last;
+    document.getElementById("social").innerHTML = socialprofiles(user.login.username);
 }
 
 //Constructor for social profile links
@@ -33,4 +39,8 @@ function socialprofiles(nickname) {
 //Show persons email
 function email() {
     alert('Show persons email');
+}
+
+function favicon(url) {
+    $("head").append("<link rel='shortcut icon' type='image/jpg' href='" + url + "/>");
 }

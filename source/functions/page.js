@@ -3,13 +3,13 @@ All functions for "DOMContentLoaded" event
 */
 
 document.addEventListener("DOMContentLoaded", function(){
-    $.get( "https://randomuser.me/api/", function( data ) {
-        var user = data['results'][0];
-        favicon(user.picture.medium)
-        document.getElementById("my_name").innerHTML = user.name.first + ' ' + user.name.last;
-        document.getElementById("social").innerHTML = socialprofiles(user.login.username);
-        loadcss(daypart());
-    }, "json" );
+    loadingactivity(true);
+    loadCSS(daypart());
+    fetchuserdata();
+});
+
+window.addEventListener('load', () => {
+    loadingactivity(false);
 });
 
 function daypart() {
@@ -25,7 +25,7 @@ function daypart() {
     }
 }
 
-function loadcss(time) {
+function loadCSS(time) {
     if (time == "day") {
         var social_css = "source/stylesheets/style.css";
         var style_css = "source/stylesheets/social.css";
@@ -38,3 +38,13 @@ function loadcss(time) {
     $("head").append("<link rel='stylesheet' id='' href='"+ social_css +"' type='text/css' />");
     $("head").append("<link rel='stylesheet' id='' href='"+ style_css +"' type='text/css' />");
 }
+
+function loadingactivity(onoff){
+    if (onoff == true) {
+        $("body").addClass("loading");    
+    }
+    if (onoff == false){
+        $("body").removeClass("loading");    
+    }
+}
+
