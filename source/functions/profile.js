@@ -25,6 +25,8 @@ function socialprofiles(nickname) {
     var profiles = '';
     profiles = profiles + '<a href="https://www.facebook.com/' + nickname + '" class="fa fa-facebook"></a>\n';
     profiles = profiles + '<a href="https://twitter.com/' + nickname + '" class="fa fa-twitter"></a>';
+    profiles = profiles + '<a href="https://reddit.com/' + nickname + '" class="fa fa-reddit"></a>';
+    profiles = profiles + '<a href="https://vk.com/' + nickname + '" class="fa fa-vk"></a>';
     return profiles;
 }
 

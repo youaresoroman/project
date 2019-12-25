@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
         var software = data.software;
         var version = data.software_value;
         var os = data.os_name;
-        var output = '';
+        var output = 'I suppose you are using ';
         /*
             <i class='' style='font-size:36px'></i>
             
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
             output = output + "<i class='fab fa-opera' style='font-size:36px'></i>";
         }
         else if (software == 'Mozilla Firefox') {
-            output = output + "<i class='fa fa-firefox' style='font-size:36px'></i>";
+            output = output + "<i class='fab fa-firefox' style='font-size:36px'></i>";
         }
         else if (software == 'Google Chrome') {
             output = output + "<i class='fab fa-chrome' style='font-size:36px'></i>";
@@ -69,6 +69,6 @@ document.addEventListener("DOMContentLoaded", function(){
             output = output + "<i class='fab fa-windows' style='font-size:36px'></i>";
         }
 
-        document.getElementById("software").innerHTML = output; 
+        document.getElementById("visitor").innerHTML = output; 
     }, "json" );
 });

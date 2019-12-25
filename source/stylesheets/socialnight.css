@@ -30,3 +30,17 @@
     border-radius: 15px;
 
   }
+
+  .fa-reddit {
+    background: rgb(46, 46, 46);
+    color: white;
+    border-width: medium;
+    border-radius: 15px;
+  }
+  
+  .fa-vk {
+    background: rgb(46, 46, 46);
+    color: white;
+    border-width: medium;
+    border-radius: 15px;
+  }

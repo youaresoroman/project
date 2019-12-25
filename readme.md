@@ -35,6 +35,9 @@ Useragent api parser
 2. ~~Formatted output on page~~
 3. Styled output
 
+#### *_page.js_*
+Default page activity
+
 ## Michał
 ### CSS
 #### *_style.css_*
