@@ -2,24 +2,19 @@
 *******PAGE BLOCK*******
 ***********************/
 
-//When content loaded
-document.addEventListener("DOMContentLoaded", function(){
+//When content fully loaded
+$(document).ready(function() {
+    loadCSS(daypart()); // loadCSS("night"); for test
+    loadingactivity();
     fetchuserdata();
     fetchuseragent();
+    finalizepage();
 });
 
-//On the start of page loading
-document.addEventListener('readystatechange', () => {
-    if (document.readyState == 'interactive') {
-        loadCSS(daypart()); // loadCSS("night"); for test
-        loadingactivity(true);
-    }
-});
-
-//When page is fully loaded
-window.addEventListener('load', () => {
-    var timer = setInterval(loadingactivity(false), 2000);
-});
+function finalizepage() {
+    $("#credits").html('This page was made by: Roman Iankovskii, Michał Janaszek, Volodimir Brintsov');
+    $("#buttons").html("<a href='#' onclick='visitor()'>About Visitor</a><a href='#' onclick='email()'>Contact</a>");
+}
 
 function daypart() {
     var d = new Date();
@@ -44,17 +39,13 @@ function loadCSS(time) {
         var style_css = "source/stylesheets/socialnight.css";
     }
 
-    $("head").append("<link rel='stylesheet' id='' href='"+ social_css +"' type='text/css' />");
-    $("head").append("<link rel='stylesheet' id='' href='"+ style_css +"' type='text/css' />");
+    $("head").append("<link rel='stylesheet' id='social_css' href='"+ social_css +"' type='text/css' />");
+    $("head").append("<link rel='stylesheet' id='style_css' href='"+ style_css +"' type='text/css' />");
 }
 
-function loadingactivity(onoff){
-    if (onoff == true) {
-        $("body").addClass("loading");    
-    }
-    if (onoff == false){
-        $("body").removeClass("loading");    
-    }
+function loadingactivity(){
+    $("body").addClass("loading");
+    setTimeout(function(){ $("body").removeClass("loading"); }, 2000);
 }
 
 /***********************
@@ -65,6 +56,7 @@ function loadingactivity(onoff){
 function fetchuserdata(){
     $.get( "https://randomuser.me/api/", function( data ) {
         var user = data['results'][0];
+        console.log(user); // DUMMIES GONNA BE DUMB
         filluserdata(user);
         favicon(user.picture.medium);
     }, "json" );
@@ -72,9 +64,9 @@ function fetchuserdata(){
 
 //Filling page with user data
 function filluserdata(user) {
-    document.getElementById("my_name").innerHTML = user.name.first + ' ' + user.name.last;
-    document.getElementById("social").innerHTML = socialprofiles(user.login.username);
-    document.getElementById("photo_frame").innerHTML = "<img src='https://randomuser.me/api/portraits/women/18.jpg'></img>";
+    $("#my_name").html(user.name.first + ' ' + user.name.last);
+    $("#social").html(socialprofiles(user.login.username));
+    $("#photo_frame").html("<img src='" + user.picture.large + "'></img>");
 }
 
 //Constructor for social profile links
@@ -106,14 +98,8 @@ function fetchuseragent(){
         var version = data.software_value;
         var os = data.os_name;
         var output = 'I suppose you are using ';
-        /*
-            <i class='' style='font-size:36px'></i>
-            
-            
-            fa fa-mobile
-        */
 
-        if (software == 'Opera'){
+        /*if (software == 'Opera'){
             output = output + "<i class='fab fa-opera' style='font-size:36px'></i>";
         }
         else if (software == 'Mozilla Firefox') {
@@ -130,13 +116,13 @@ function fetchuseragent(){
         }
         else if (software == 'Internet Explorer') {
             output = output + "<i class='fab fa-edge' style='font-size:36px'></i>";
-        }
+        }*/
 
         output = output + software + " version " + version;
 
         output = output + " and your platform is " + os + ' ';
 
-        if (os == 'Linux'){
+        /*if (os == 'Linux'){
             output = output + "<i class='fab fa-linux' style='font-size:36px'></i>";
         }
         else if (os == 'Android') {
@@ -156,9 +142,9 @@ function fetchuseragent(){
         }
         else if (os == 'Windows Phone') {
             output = output + "<i class='fab fa-windows' style='font-size:36px'></i>";
-        }
+        }*/
 
-        document.getElementById("visitor").innerHTML = output; 
+        $("#visitor").html(output); 
     }, "json" );
 }
 

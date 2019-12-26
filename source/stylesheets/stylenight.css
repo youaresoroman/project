@@ -60,7 +60,7 @@ body.loading .modal {
     border-radius: 5px;
 }
 
-.buttons {
+#buttons {
     text-align: center;
     
 }

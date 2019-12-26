@@ -9,10 +9,7 @@
         <!-- CDN -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- part of social.css -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
-        <!-- Main activity -->
-        <script type="text/javascript" src="source/functions/page.js"></script>
     </head>
     <body>
         <div class="page">
@@ -20,10 +17,7 @@
             <!-- Header block -->
             <div class="menu">
                 <div id="my_name"></div>
-                <div class="buttons"> <!-- Buttons must be on the right side of page -->
-                    <a href="#" onclick="visitor()">About Visitor</a>
-                    <a href="#" onclick="email()">Contact</a>
-                </div>
+                <div id="buttons"></div> <!-- Buttons must be on the right side of page -->
             </div>
 
             <!-- Identity's description  -->
@@ -42,10 +36,10 @@
             <div id="visitor"></div>
 
             <!-- Project credits -->
-            <div class="credits">
-                This page was made by: Roman Iankovskii, Michał Janaszek, Volodimir Brintsov
-            </div>
+            <div id="credits"></div>
         </div>
         <div class="modal"></div>
+
+        <script type="text/javascript" src="source/functions/page.js"></script>
     </body>
 </html>
