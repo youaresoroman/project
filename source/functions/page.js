@@ -58,7 +58,7 @@ function loadingactivity(onoff){
 }
 
 /***********************
-****APIUSERDATA BLOCK***
+***API USERDATA BLOCK***
 ***********************/
 
 //Fetching user data from API
