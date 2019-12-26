@@ -75,6 +75,7 @@ Page animations
 * [Manipulation](https://api.jquery.com/category/manipulation/)
 * [GET](https://api.jquery.com/jQuery.get/)
 * [POST](https://api.jquery.com/jQuery.post)
+* [DOM manipulation](https://www.w3schools.com/jquery/jquery_dom_set.asp)
 
 #### Animation
 * [Tutorial](https://www.w3schools.com/js/js_htmldom_animate.asp)
