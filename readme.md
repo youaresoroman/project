@@ -29,7 +29,7 @@ Index page for project
 Gathering icons
 
 ### Javascript
-#### *_page.css* API USERAGENT BLOCK
+#### *_page.js_* API USERAGENT BLOCK
 Useragent api parser
 1. ~~Gathering data sequence~~
 2. ~~Formatted output on page~~
@@ -44,17 +44,17 @@ Default page activity
 Page style
 
 ### Javascript
-#### *_page.css* ANIMATION BLOCK
+#### *_page.js_* ANIMATION BLOCK
 Page animations
 
 ## Volodimir
 ### CSS
 #### *_social.css_*
-Сделать стиль кнопок для перехода в соцсети, пример уже есть блять
+Сделать стиль кнопок для перехода в соцсети, пример уже есть
 
 ### Javascript
-#### *_page.css* API USERDATA BLOCK
-Сделать так чтобы блять данные с апи появились на странице (что будет на странице уже на твое усмотрение)
+#### *_page.js_* API USERDATA BLOCK
+Сделать так чтобы данные с апи появились на странице (что будет на странице уже на твое усмотрение)
 
 # Links
 ## Preview pages
