@@ -23,7 +23,7 @@ function daypart() {
         //night
         return "night";
     }
-    if (n > 6 && n < 22) {
+    if (n => 6 && n < 22) {
         //day
         return "day";
     }
