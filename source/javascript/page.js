@@ -5,7 +5,7 @@
 //When content fully loaded
 $(document).ready(function() {
     loadCSS(daypart()); // loadCSS("night"); for test
-    loadingactivity();
+    loadingactivity(); //Loading sequence
     fetchuserdata();
     fetchuseragent();
     finalizepage();
@@ -30,17 +30,19 @@ function daypart() {
 }
 
 function loadCSS(time) {
+    console.log('Page theme name is "' + time + '"'); //Console message
+
     if (time == "day") {
-        var social_css = "source/stylesheets/style.css";
-        var style_css = "source/stylesheets/social.css";
+        var social_css = "style.css";
+        var style_css = "social.css";
     }
     if (time == "night") {
-        var social_css = "source/stylesheets/stylenight.css";
-        var style_css = "source/stylesheets/socialnight.css";
+        var social_css = "stylenight.css";
+        var style_css = "socialnight.css";
     }
 
-    $("head").append("<link rel='stylesheet' id='social_css' href='"+ social_css +"' type='text/css' />");
-    $("head").append("<link rel='stylesheet' id='style_css' href='"+ style_css +"' type='text/css' />");
+    $("head").append("<link rel='stylesheet' id='social_css' href='source/stylesheets/"+ social_css +"' type='text/css' />");
+    $("head").append("<link rel='stylesheet' id='style_css' href='source/stylesheets/"+ style_css +"' type='text/css' />");
 }
 
 function loadingactivity(){
@@ -54,6 +56,8 @@ function loadingactivity(){
 
 //Fetching user data from API
 function fetchuserdata(){
+    console.log("Fetching userdata ..."); //Console message
+
     $.get( "https://randomuser.me/api/", function( data ) {
         var user = data['results'][0];
         console.log(user); // DUMMIES GONNA BE DUMB
@@ -64,6 +68,8 @@ function fetchuserdata(){
 
 //Filling page with user data
 function filluserdata(user) {
+    console.log("Filling userdata ..."); //Console message
+
     $("#my_name").html(user.name.first + ' ' + user.name.last);
     $("#social").html(socialprofiles(user.login.username));
     $("#photo_frame").html("<img src='" + user.picture.large + "'></img>");
@@ -93,58 +99,13 @@ function favicon(url) {
 **API USERAGENT BLOCK***
 ***********************/
 function fetchuseragent(){
+    console.log("Fetching user agent info ..."); //Console message
+
     $.get( "https://yankowski.eu/api/v0/ua", function( data ) {
         var software = data.software;
         var version = data.software_value;
         var os = data.os_name;
-        var output = 'I suppose you are using ';
-
-        /*if (software == 'Opera'){
-            output = output + "<i class='fab fa-opera' style='font-size:36px'></i>";
-        }
-        else if (software == 'Mozilla Firefox') {
-            output = output + "<i class='fab fa-firefox' style='font-size:36px'></i>";
-        }
-        else if (software == 'Google Chrome') {
-            output = output + "<i class='fab fa-chrome' style='font-size:36px'></i>";
-        }
-        else if (software == 'Safari') {
-            output = output + "<i class='fab fa-safari' style='font-size:36px'></i>";
-        }
-        else if (software == 'Mobile Safari') {
-            output = output + "<i class='fab fa-safari' style='font-size:36px'></i>";
-        }
-        else if (software == 'Internet Explorer') {
-            output = output + "<i class='fab fa-edge' style='font-size:36px'></i>";
-        }*/
-
-        output = output + software + " version " + version;
-
-        output = output + " and your platform is " + os + ' ';
-
-        /*if (os == 'Linux'){
-            output = output + "<i class='fab fa-linux' style='font-size:36px'></i>";
-        }
-        else if (os == 'Android') {
-            output = output + "<i class='fab fa-android' style='font-size:36px'></i>";
-        }
-        else if (os == 'IOS') {
-            output = output + "<i class='fab fa-apple' style='font-size:36px'></i>";
-        }
-        else if (os == 'iPhone OS') {
-            output = output + "<i class='fab fa-apple' style='font-size:36px'></i>";
-        }
-        else if (os == 'Mac OS X') {
-            output = output + "<i class='fab fa-apple' style='font-size:36px'></i>";
-        }
-        else if (os == 'Windows NT') {
-            output = output + "<i class='fab fa-windows' style='font-size:36px'></i>";
-        }
-        else if (os == 'Windows Phone') {
-            output = output + "<i class='fab fa-windows' style='font-size:36px'></i>";
-        }*/
-
-        $("#visitor").html(output); 
+        $("#visitor").html('I suppose you are using ' + software + " version " + version + " and your platform is " + os);
     }, "json" );
 }
 
