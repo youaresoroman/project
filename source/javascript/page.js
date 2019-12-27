@@ -19,7 +19,7 @@ function finalizepage() {
 function daypart() {
     var d = new Date();
     var n = d.getHours();
-    if (n > 22 && n < 6){
+    if (n => 22 && n < 6){
         //night
         return "night";
     }
