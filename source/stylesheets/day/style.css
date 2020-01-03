@@ -25,19 +25,14 @@ body {
     height:     100%;
     width:      100%;
     background: rgba( 255, 255, 255, .9 ) 
-                url('../../source/assets/gif/loading.gif') /*http://i.stack.imgur.com/FhHRx.gif*/ 
+                url('../../source/assets/gif/loading/day.gif') /*http://i.stack.imgur.com/FhHRx.gif*/ 
                 50% 50% 
                 no-repeat;
 }
 
-/* When the body has the loading class, we turn
-   the scrollbar off with overflow:hidden */
 body.loading .modal {
     overflow: hidden;   
 }
-
-/* Anytime the body has the loading class, our
-   modal element will be visible */
 body.loading .modal {
     display: block;
 }
@@ -62,6 +57,30 @@ body.loading .modal {
     text-align: center;
     position: relative;
     float: right;
+}
+
+#general {
+    background-color: lavender;
+}
+
+.contacts {
+    /*zrob cos*/
+}
+
+#email {
+    background-color: blue;
+}
+
+#phone {
+    background-color: brown;
+}
+
+#social {
+    background-color: azure;
+}
+
+#visitor {
+    background-color: wheat;
 }
 
 .profile_block {
