@@ -60,11 +60,9 @@ function fetchuserdata(){
         //Show persons email
         var email = document.getElementById("email")
         email.onclick = function () {
+          par = "You can write me on: " + user.email + ". Or you can call me on: " + user.phone + ", " + user.cell + ". Below you can find my social, I will be glad to speak with you"
+          $("#general").html(par)
 
-          var general_contacts = document.getElementById("general")
-          var p =  document.createElement("p")
-          p = "You can write me on: " + user.email + ". Or you can call me on: " + user.phone + ", " + user.cell + ". Below you can find my social, I will be glad to speak with you!"
-          general_contacts.append(p)
 
         }
 
@@ -73,10 +71,8 @@ function fetchuserdata(){
         about_visitior.onclick = function () {
 
           var name = user['name']
-          var general_aboutvisitor = document.getElementById("general")
-          var p = document.createElement("p")
           p = "Hi! I am " + name.first + " " + name.last + ". Nice to meet you!:) From above you can find my photo. I am from " + user.location.city + ", " + user.location.country + "."
-          general_aboutvisitor.append(p)
+          $("#general").html(p)
 
         }
 
