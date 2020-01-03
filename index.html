@@ -19,13 +19,13 @@
                 <div id="buttons"></div> <!-- Buttons must be on the right side of page -->
             </div>
 
-            <!-- Identity's description  -->
+            <!-- Description  -->
             <div class="description">
                 <div id="photo_frame"></div>
-                <div id="general"></div> 
+                <div id="general"></div>
             </div>
 
-            <!-- Social buttons for identity -->
+            <!-- Social buttons -->
             <div id="social"></div>
 
             <!-- Userdata output -->
@@ -36,6 +36,18 @@
         </div>
         <div class="modal"></div>
 
-        <script type="text/javascript" src="source/javascript/page.js"></script>
+        <script type="text/javascript" src="source/javascript/lib.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var day_time = "day"; // for test getDayPart()
+
+                appendStyleSheet( 'social', day_time );
+                appendStyleSheet( 'style', day_time );
+                showLoadingAnimation();
+                fetchUserData();
+                fetchUserAgentData();
+                addCredits();
+            });
+        </script>
     </body>
 </html>
