@@ -1,7 +1,3 @@
-/***********************
-*******PAGE BLOCK*******
-***********************/
-
 //When content fully loaded
 $(document).ready(function() {
     loadCSS(daypart()); // loadCSS("night"); for test
@@ -13,7 +9,7 @@ $(document).ready(function() {
 
 function finalizepage() {
     $("#credits").html('This page was made by: Roman Iankovskii, Michał Janaszek, Volodimir Brintsov');
-    $("#buttons").html("<a href='#' onclick='visitor()'>About Visitor</a><a href='#' onclick='email()'>Contact</a>");
+    $("#buttons").html("<a href='#', id = 'about_visitior'>About Visitor</a><a href='#', id = 'email'>Contact</a>");
 }
 
 function daypart() {
@@ -60,8 +56,11 @@ function fetchuserdata(){
 
     $.get( "https://randomuser.me/api/", function( data ) {
         var user = data['results'][0];
+
         console.log(user); // DUMMIES GONNA BE DUMB
         filluserdata(user);
+        show_email(user);
+        show_about_visitor(user);
         favicon(user.picture.medium);
     }, "json" );
 }
@@ -76,7 +75,7 @@ function filluserdata(user) {
 }
 
 //Constructor for social profile links
-function socialprofiles(nickname) { 
+function socialprofiles(nickname) {
     var profiles = '';
     profiles = profiles + '<a href="https://www.facebook.com/' + nickname + '" class="fa fa-facebook"></a>\n';
     profiles = profiles + '<a href="https://twitter.com/' + nickname + '" class="fa fa-twitter"></a>';
@@ -85,15 +84,33 @@ function socialprofiles(nickname) {
     return profiles;
 }
 
-//Show persons email
-function email() {
-    alert('Show persons email');
-}
-
 //Update page icon
 function favicon(url) {
     $("head").append("<link rel='shortcut icon' type='image/jpg' href='" + url + "'/>");
 }
+
+//Looking for information
+function show_email(user) {
+    var email = document.getElementById("email");
+    email.onclick = function () {
+//execute function onclick to show email
+        var message_email = "You can write me on: " + user.email + ". Or you can call me on: " + user.phone + ", " + user.cell + ". Below you can find my social, I will be glad to speak with you";
+        $("#general").html(message_email);
+
+    }
+}
+
+//Looking for information
+function show_about_visitor(user) {
+    var about_visitior = document.getElementById('about_visitior');
+    about_visitior.onclick = function () {
+//execute function to show information about visitor
+        var name = user['name'];
+        var message_about_visitor = "Hi! I am " + name.first + " " + name.last + ". Nice to meet you!:) From above you can find my photo. I am from " + user.location.city + ", " + user.location.country + ".";
+        $("#general").html(message_about_visitor);
+    }
+}
+
 
 /***********************
 **API USERAGENT BLOCK***
@@ -112,7 +129,3 @@ function fetchuseragent(){
 /***********************
 ****ANIMATION BLOCK*****
 ***********************/
-
-function visitor() {
-    alert('Light up viewers info block');
-}
