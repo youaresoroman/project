@@ -24,7 +24,7 @@ body {
     height:     100%;
     width:      100%;
     background: rgba( 0, 0, 0, .9 ) 
-                url('../../source/assets/gif/loading/night.gif')
+                url('../../../source/assets/gif/loading/night.gif')
                 50% 50% 
                 no-repeat;
 }
