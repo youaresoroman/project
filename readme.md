@@ -6,19 +6,13 @@
 
 # Project's TODO List
 ## Roman
-### HTML DOM
-#### *_examples_*
-Images of page example 
-
-* *_desktop_*
-
-* *_mobile_*
 
 #### *_readme.md_*
 Readme and TODO section
 1. ~~Document structure~~
 2. ~~Links for info~~
 
+### HTML DOM
 #### *_index.html_*
 Index page for project
 1. ~~Document DOM structure~~
@@ -29,13 +23,13 @@ Index page for project
 Gathering icons
 
 ### Javascript
-#### *_page.js_* [API USERAGENT BLOCK]
+#### *_lib.js_* [API USERAGENT BLOCK]
 Useragent api parser
 1. ~~Gathering data sequence~~
 2. ~~Formatted output on page~~
 3. Styled output
 
-#### *_page.js_* [PAGE BLOCK]
+#### *_lib.js_*
 Default page activity
 
 ## Michał
@@ -44,16 +38,16 @@ Default page activity
 Page style
 
 ### Javascript
-#### *_page.js_* [ANIMATION BLOCK]
+#### *_lib.js_* [ANIMATION BLOCK]
 Page animations
 
 ## Volodimir
 ### CSS
-#### *_social.css_*
+#### *_style.css_*
 Сделать стиль кнопок для перехода в соцсети, пример уже есть
 
 ### Javascript
-#### *_page.js_* [API USERDATA BLOCK]
+#### *_lib.js_* [API USERDATA BLOCK]
 Сделать так чтобы данные с апи появились на странице (что будет на странице уже на твое усмотрение)
 
 # Links
