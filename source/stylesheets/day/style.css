@@ -1,14 +1,12 @@
 body {
-    
 	font-family: Rubik;
     font-size: 110%;
-    
+    color: black;
     display: flex;
 	display: -webkit-flex;
   	-webkit-align-items: center;
  	align-items: center;
     flex-direction: column;
-    
     margin-top: 10%;
     margin-bottom: 10%;
     margin-right: 15%;
@@ -45,7 +43,7 @@ body.loading .modal {
     border-radius: 10px;
 }
 
-.menu {
+.header {
     width: 100%;
     border-radius: 5px;
     display: flex;

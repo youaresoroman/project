@@ -1,0 +1,41 @@
+body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif
+}
+.w3-row-padding img {
+    margin-bottom: 12px
+}
+.w3-sidebar {
+    width: 120px;
+    background: #222;
+}
+#main {
+    margin-left: 120px
+}
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0
+    }
+}
+.modal {
+     display: none;
+     position: fixed;
+     z-index: 1000;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background: rgba( 0, 0, 0, .9 ) url('../../source/assets/gif/loading/night.gif') 50% 50% no-repeat;
+}
+body.loading .modal {
+     overflow: hidden;
+}
+body.loading .modal {
+     display: block;
+}
+
+#home {
+     background-image: url("../../source/assets/jpg/orange.jpg");
+     background-position: center top;
+     background-repeat: no-repeat;
+     background-size: 100%;
+}

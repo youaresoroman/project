@@ -1,21 +1,9 @@
-function getDayPart() {
-    var d = new Date();
-    var n = d.getHours();
-
-    if (n => 22 && n < 6){
-        return "night";
-    }
-    else if (n => 6 && n < 22) {
-        return "day";
-    }
-}
-
-function appendStyleSheet( css_name, theme_name ) {
-    $("head").append("<link rel='stylesheet' id='" + css_name + "_css' href='source/stylesheets/" + theme_name + "/" + css_name + ".css' type='text/css' />");
-}
-
 function addFavicon( image_url ) {
     $("head").append("<link rel='shortcut icon' type='image/jpg' href='" + image_url + "'/>");
+}
+
+function openlink (account, username) {
+    alert(account + username);
 }
 
 /**
@@ -32,29 +20,40 @@ function fillWithUserData(data) {
     addFavicon( data.picture.medium );
 
     $("#my_name").html( data.name.first + ' ' + data.name.last );
-    $("#photo_frame").html("<img src='" + data.picture.large + "'></img>");
+    $("#my_name_about").html( data.name.first + ' ' + data.name.last );
+    $("#home").append( '<img src="' + data.picture.large +  '" alt="person" class="w3-image" width="300" height="300">' );
+    $("#avatar").append( '<img src="' + data.picture.large +  '" style="width:100%">' );
     fillGeneralDataBlock( data );
 
     appendSocialLink( 'facebook', data.login.username );
     appendSocialLink( 'twitter', data.login.username );
     appendSocialLink( 'reddit', data.login.username );
     appendSocialLink( 'vk', data.login.username );
+    appendCredits();
 }
 
 function fillGeneralDataBlock( user ) {
-    $("#general").append( "<p>Hi there! I'm " + user.name.first + ". I am an artist and small business owner, a lover of family, travel, food, beer, getting out and lounging in." );
-    $("#general").append( " I adore my friends, holidays, classic films, historical fiction, and if J Crew makes it I probably want to own it." );
-    $("#general").append( " My life is crazy, busy, full of fun. I photograph life's joy-filled moments." );
-    $("#general").append( " Now I'm living in " + user.location.city + " in " + user.location.country + "</p>");
-    $("#general").append( "Below you can find my social accounts, I will be glad to speak with you</p>" );
-    $("#email").append( "Email: " + user.email );
-    $("#phone").append( "Phone: " + user.phone );
+    $("#about_me").append( "<p>I'm " + user.name.first + ". I am an artist and small business owner, a lover of family, travel, food, beer, getting out and lounging in." );
+    $("#about_me").append( " I adore my friends, holidays, classic films, historical fiction, and if J Crew makes it I probably want to own it." );
+    $("#about_me").append( " My life is crazy, busy, full of fun. I photograph life's joy-filled moments." );
+    $("#about_me").append( " Now I'm living in " + user.location.city + " in " + user.location.country + "</p>");
+    $("#about_me").append( "Below you can find my social accounts, I will be glad to speak with you</p>" );
+    $("#address").append( '<i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> ' + user.location.city + ', ' + user.location.country);
+    $("#phone").append( '<i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: ' + user.phone );
+    $("#email").append( '<i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: ' + user.email );
 }
 
 function appendSocialLink( account, username ) {
-    $("#social").append( "<a href='https://" + account + ".com/" + username + "' class='fa fa-" + account + "'></a>" );
+    $("#social_links").append('<i class="fa fa-' + account + ' w3-hover-opacity" id="' + account + '_link"></i>');
+    $("#" + account + "_link").click(function() {
+        window.location.href = "https://" + account + ".com/" + username;
+    });
 }
 
+function appendCredits() {
+    $("#social_links").append( "<p>This page was made by: Roman Iankovskii, Michał Janaszek, Volodimir Brintsov</p>" );
+    $("#social_links").append( '<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>' );
+}
 /**
  * API USERAGENT BLOCK
  */
@@ -65,7 +64,9 @@ function fetchUserAgentData(){
 }
 
 function fillUserAgentDataBlock( data ) {
-    $("#visitor").html('I suppose you are using ' +  data.software + " version " + data.software_value + " and your platform is " + data.os_name);
+    $("#visitor").append( '<p><i class="fa fa-internet-explorer fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>' + data.software + " version " + data.software_value + '</p>');
+    $("#visitor").append( '<p><i class="fa fa-desktop fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>' + data.os_name + '</p>');
+    $("#visitor").append( '<p><i class="fa fa-gear fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>' + data.os_platform + ' platform </p>');
 }
 
 /**

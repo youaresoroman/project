@@ -44,7 +44,7 @@ body.loading .modal {
     border-radius: 10px
 }
 
-.menu {
+.header {
     width: 100%;
     display: flex;
 	display: -webkit-flex;

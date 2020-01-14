@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Just my personal page</title>
+        <meta charset="utf-8">
+        <!-- Toggle view for mobile device -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <!-- CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- part of social.css -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </head>
+    <body>
+        <div class="page">
+
+            <!-- Header block -->
+            <div class="header">
+                <div id="my_name"></div>
+                <div id="buttons"></div> <!-- Buttons must be on the right side of page -->
+            </div>
+
+            <!-- Description  -->
+            <div class="description">
+                <div id="photo_frame"></div>
+                <div id="general"></div>
+                <div class="contacts">
+                    <div id="email"></div>
+                    <div id="phone"></div>
+                </div>
+            </div>
+
+            <!-- Social buttons -->
+            <div id="social"></div>
+
+            <!-- Userdata output -->
+            <div id="visitor"></div>
+
+            <!-- Project credits -->
+            <div id="credits">
+                This page was made by: Roman Iankovskii, Michał Janaszek, Volodimir Brintsov
+            </div>
+        </div>
+        <div class="modal"></div>
+
+        <script type="text/javascript" src="source/javascript/lib_old.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var day_time = "day"; // for test getDayPart()
+
+                appendStyleSheet( 'social', day_time );
+                appendStyleSheet( 'style', day_time );
+                showLoadingAnimation();
+                fetchUserData();
+                fetchUserAgentData();
+            });
+        </script>
+    </body>
+</html>
