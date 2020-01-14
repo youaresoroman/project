@@ -34,8 +34,6 @@ body.loading .modal {
 }
 
 #home {
-     background-image: url("../../source/assets/jpg/blue.jpg");
-     background-position: center top;
-     background-repeat: no-repeat;
-     background-size: 100%;
+     background: rgb(0,0,0);
+     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,9,121,1) 21%, rgba(0,212,255,1) 100%);
 }

@@ -89,6 +89,7 @@ Page animations
 * [Icons](http://astronautweb.co/snippet/font-awesome/)
 * [Icon example](https://www.w3schools.com/howto/howto_css_social_media_buttons.asp)
 * [Free bootstrap themes](https://bootswatch.com)
+* [Gradient generation](https://cssgradient.io/)
 
 ### Javascript
 * [Libraries](https://blog.bitsrc.io/11-javascript-animation-libraries-for-2018-9d7ac93a2c59)
