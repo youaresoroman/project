@@ -1,0 +1,89 @@
+body {
+	font-family: Rubik;
+    font-size: 110%;
+    color: black;
+    display: flex;
+	display: -webkit-flex;
+  	-webkit-align-items: center;
+ 	align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color: white;
+}
+
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .9 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif')
+                50% 50% 
+                no-repeat;
+}
+
+body.loading .modal {
+    overflow: hidden;   
+}
+body.loading .modal {
+    display: block;
+}
+
+.page {
+    width: 95%;
+    background-color: rgb(247, 231, 237);
+    padding: 10px;
+    border-width: medium;
+    border-radius: 10px;
+}
+
+.header {
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+}
+
+#buttons {
+    text-align: center;
+    position: relative;
+    float: right;
+}
+
+#general {
+    /*zrob cos*/
+}
+
+.contacts {
+   /*zrob cos*/
+}
+
+#email {
+   /*zrob cos*/
+}
+
+#phone {
+    /*zrob cos*/
+}
+
+#social {
+    /*zrob cos*/
+}
+
+#visitor {
+    /*zrob cos*/
+}
+
+.profile_block {
+    width: 120%;
+    background-color: rgb(39, 220, 226);
+    border-width: medium;
+    border-radius: 15px;
+}

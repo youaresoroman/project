@@ -6,37 +6,20 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 .w3-sidebar {
     width: 120px;
-    background: #222;
-}
-.fa {
-    color: #ADD8E6;
-}
-#main {
-    margin-left: 120px
+    background: #222
 }
 @media only screen and (max-width: 600px) {
     #main {
         margin-left: 0
     }
 }
-.modal {
-     display: none;
-     position: fixed;
-     z-index: 1000;
-     top: 0;
-     left: 0;
-     height: 100%;
-     width: 100%;
-     background: rgba( 0, 0, 0, .9 ) url('../../source/assets/gif/loading/night.gif') 50% 50% no-repeat;
+#main {
+    margin-left: 120px
 }
-body.loading .modal {
-     overflow: hidden;
-}
-body.loading .modal {
-     display: block;
-}
-
 #home {
      background: rgb(0,0,0);
-     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,9,121,1) 21%, rgba(0,212,255,1) 100%);
+     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,9,121,1) 21%, rgba(0,212,255,1) 100%)
+}
+.fa {
+    color: #357EC7
 }
