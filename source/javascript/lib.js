@@ -57,13 +57,13 @@ function fillAboutBlock( data ) {
 }
 
 function fillContactsBlock( data ) {
-    $("#address").append( '<i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> ' + data.location.city + ', ' + data.location.country);
-    $("#phone").append( '<i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: ' + data.phone );
-    $("#email").append( '<i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: ' + data.email );
+    $("#address").append( '<i class="fa fa-map-marker fa-fw color-red w3-xxlarge w3-margin-right"></i> ' + data.location.city + ', ' + data.location.country);
+    $("#phone").append( '<i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: ' + data.phone );
+    $("#email").append( '<i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: ' + data.email );
 }
 
 function addSocialLink( account, username ) {
-    $("#social_links").append('<i class="fa fa-' + account + ' w3-hover-opacity" id="' + account + '_link"></i>');
+    $("#social_links").append('<i class="fa fa-' + account + ' w3-hover-opacity" style="padding:5px" id="' + account + '_link"></i>');
     addSocialLinkClickEvent ( account, username );
 }
 
@@ -84,9 +84,9 @@ function fetchUserAgentData() {
 }
 
 function fillVisitorBlock( data ) {
-    $("#visitor").append( '<p><i class="fa fa-internet-explorer fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>' + data.software + " version " + data.software_value + '</p>');
-    $("#visitor").append( '<p><i class="fa fa-desktop fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>' + data.os_name + '</p>');
-    $("#visitor").append( '<p><i class="fa fa-gear fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>' + data.os_platform + ' platform </p>');
+    $("#visitor").append( '<p><i class="fa fa-internet-explorer fa-fw w3-xxlarge w3-margin-right"></i>' + data.software + " version " + data.software_value + '</p>');
+    $("#visitor").append( '<p><i class="fa fa-desktop fa-fw w3-xxlarge w3-margin-right"></i>' + data.os_name + '</p>');
+    $("#visitor").append( '<p><i class="fa fa-gear fa-fw w3-xxlarge w3-margin-right"></i>' + data.os_platform + ' platform </p>');
 }
 
 /**
