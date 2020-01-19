@@ -21,7 +21,7 @@ function fillWithUserData(data) {
 
     $("#my_name").html( data.name.first + ' ' + data.name.last );
     $("#my_name_about").html( data.name.first + ' ' + data.name.last );
-    $("#home").append( '<img src="' + data.picture.large +  '" alt="person" class="w3-image" width="300" height="300">' );
+    //$("#home").append( '<img src="' + data.picture.large +  '" alt="person" class="w3-image" width="300" height="300">' );
     $("#avatar").append( '<img src="' + data.picture.large +  '" style="width:100%">' );
     fillGeneralDataBlock( data );
 
@@ -29,6 +29,7 @@ function fillWithUserData(data) {
     appendSocialLink( 'twitter', data.login.username );
     appendSocialLink( 'reddit', data.login.username );
     appendSocialLink( 'vk', data.login.username );
+    appendSocialLink( 'github', "youaresoroman/project" );
     appendCredits();
 }
 
@@ -52,6 +53,7 @@ function appendSocialLink( account, username ) {
 
 function appendCredits() {
     $("#social_links").append( "<p>This page was made by: Roman Iankovskii, Michał Janaszek, Volodimir Brintsov</p>" );
+    $("#social_links").append( '<p class="w3-medium"><a href="https://github.com/youaresoroman/project" target="_blank" class="w3-hover-text-green">Github project page</a></p>' );
     $("#social_links").append( '<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>' );
 }
 /**
