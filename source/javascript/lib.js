@@ -1,37 +1,51 @@
 /**
  * MAIN ACTIVITY
  */ 
-
-$(document).ready( function() {
+$( document ).ready( function() {
     showLoadingAnimation();
     fetchUserData();
     fetchUserAgentData();
     addCredits();
 });
 
+window.onload = function() {
+    hideLoadingAnimation();
+}
+
 function addCredits() {
     $("#credits").append( "<p>This page was made by: Roman Iankovskii, Michał Janaszek, Volodimir Brintsov</p>" );
     $("#credits").append( '<p class="w3-medium"><a href="https://github.com/youaresoroman/project" target="_blank" class="w3-hover-text-green">Github project page</a></p>' );
 }
 
+function logError( func_name, message ) {
+    console.error( func_name + '(): ' + message );
+}
+
+function logInfo( func_name, message ) {
+    console.info( func_name + '(): ' + message );
+}
 /**
  * API USERDATA BLOCK
  */
 
 function fetchUserData () {
-    $.get( "https://randomuser.me/api/", function( data ) {
+    $.get( "https://randomuser.me/api/", function( data ) { 
         var data = data['results'][0];
-        addFavicon( data.picture.medium );
-        fillNameAndSurname( data );
-        addAvatar( data );
-        fillAboutBlock( data );
-        fillContactsBlock( data );
-        addSocialLink( 'facebook', data.login.username );
-        addSocialLink( 'twitter', data.login.username );
-        addSocialLink( 'reddit', data.login.username );
-        addSocialLink( 'vk', data.login.username );
-        addSocialLink( 'github', "youaresoroman/project" );
-    }, "json" );
+            addFavicon( data.picture.medium );
+            fillNameAndSurname( data );
+            addAvatar( data );
+            fillAboutBlock( data );
+            fillContactsBlock( data );
+            addSocialLink( 'facebook', data.login.username );
+            addSocialLink( 'twitter', data.login.username );
+            addSocialLink( 'reddit', data.login.username );
+            addSocialLink( 'vk', data.login.username );
+            addSocialLink( 'github', "youaresoroman/project" );
+            logInfo( "fetchUserData", "Done" );
+     }, "json" )
+     .fail( function() {
+        logError( "fetchUserData", "Bad connection" );
+    });
 }
 
 function addFavicon( image_url ) {
@@ -62,7 +76,7 @@ function fillContactsBlock( data ) {
 
 function addSocialLink( account, username ) {
     $("#social_links").append('<i class="fa fa-' + account + ' w3-hover-opacity" style="padding:5px" id="' + account + '_link"></i>');
-    addSocialLinkClickEvent ( account, username );
+    addSocialLinkClickEvent( account, username );
 }
 
 function addSocialLinkClickEvent( account, username ) {
@@ -78,7 +92,11 @@ function addSocialLinkClickEvent( account, username ) {
 function fetchUserAgentData() {
     $.get( "https://yankowski.eu/api/v0/ua", function( data ) {
         fillVisitorBlock( data );
-    }, "json" );
+        logInfo( "fetchUserAgentData", "Done" );
+    }, "json" )
+    .fail( function() {
+        logError( "fetchUserAgentData", "Bad connection" );
+    });
 }
 
 function fillVisitorBlock( data ) {
@@ -93,5 +111,9 @@ function fillVisitorBlock( data ) {
 
 function showLoadingAnimation() {
     $("body").addClass("loading");
-    setTimeout(function(){ $("body").removeClass("loading"); }, 2000);
+    
+}
+
+function hideLoadingAnimation() {
+    setTimeout(function(){ $("body").removeClass("loading") }, 1000);
 }
