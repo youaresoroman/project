@@ -12,7 +12,6 @@ $(document).ready( function() {
 function addCredits() {
     $("#credits").append( "<p>This page was made by: Roman Iankovskii, Michał Janaszek, Volodimir Brintsov</p>" );
     $("#credits").append( '<p class="w3-medium"><a href="https://github.com/youaresoroman/project" target="_blank" class="w3-hover-text-green">Github project page</a></p>' );
-    // $("#credits").append( '<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>' );
 }
 
 /**
@@ -40,7 +39,6 @@ function addFavicon( image_url ) {
 }
 
 function addAvatar( data ) {
-    //$("#home").append( '<img src="' + data.picture.large +  '" alt="person" class="w3-image" width="300" height="300">' );
     $("#avatar").append( '<img src="' + data.picture.large +  '" style="width:100%">' );
 }
 
