@@ -13,7 +13,7 @@ window.onload = function() {
 }
 
 function addCredits() {
-    $("#credits").append( "<p>This page was made by: Roman Iankovskii, Michał Janaszek, Volodimir Brintsov</p>" );
+    $("#credits").append( "<p>This page was made by: Roman Iankovskii, Michał Janaszek, Volodymyr Brintsov</p>" );
     $("#credits").append( '<p class="w3-medium"><a href="https://github.com/youaresoroman/project" target="_blank" class="w3-hover-text-green">Github project page</a></p>' );
 }
 

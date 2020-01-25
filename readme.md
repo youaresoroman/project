@@ -41,7 +41,7 @@ Page style
 #### *_lib.js_* [ANIMATION BLOCK]
 Page animations
 
-## Volodimir
+## Volodymyr
 ### CSS
 #### *_style.css_*
 Сделать стиль кнопок для перехода в соцсети, пример уже есть
