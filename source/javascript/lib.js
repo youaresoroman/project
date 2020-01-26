@@ -72,8 +72,8 @@ function fillAboutBlock( data ) {
 
 function fillContactsBlock( data ) {
     $("#address").append( '<i class="fa fa-map-marker fa-fw color-red w3-xxlarge w3-margin-right"></i> ' + data.location.city + ', ' + data.location.country);
-    $("#phone").append( '<i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: ' + data.phone );
-    $("#email").append( '<i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: ' + data.email );
+    $("#phone").append( '<i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: <a href="tel:' + data.phone + '">' + data.phone + '</a>' );
+    $("#email").append( '<i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: <a href="mailto:' + data.email + '">' + data.email + '</a>' );
 }
 
 function addSocialLink( account, username ) {
