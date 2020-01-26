@@ -1,6 +1,6 @@
 /**
  * MAIN ACTIVITY
- */ 
+ */
 $( document ).ready( function() {
     showLoadingAnimation();
     fetchUserData();
