@@ -20,35 +20,34 @@ Index page for project
 3. ~~Naming div's~~
 
 #### *_Software icons_*
-Gathering icons
+~~Gathering icons~~
 
 ### Javascript
 #### *_lib.js_* [API USERAGENT BLOCK]
 Useragent api parser
 1. ~~Gathering data sequence~~
 2. ~~Formatted output on page~~
-3. Styled output
+3. ~~Styled output~~
 
-#### *_lib.js_*
-Default page activity
+#### *_lib.js_* [ANIMATION BLOCK]
+~~Page animations~~
+
+#### *_lib.js_* [MAIN ACTIVITY BLOСK]
+~~Default page activity~~
 
 ## Michał
 ### CSS
 #### *_style.css_*
-Page style
-
-### Javascript
-#### *_lib.js_* [ANIMATION BLOCK]
-Page animations
+~~Page style~~
 
 ## Volodymyr
 ### CSS
 #### *_style.css_*
-Сделать стиль кнопок для перехода в соцсети, пример уже есть
+~~Сделать стиль кнопок для перехода в соцсети, пример уже есть~~
 
 ### Javascript
 #### *_lib.js_* [API USERDATA BLOCK]
-Сделать так чтобы данные с апи появились на странице (что будет на странице уже на твое усмотрение)
+~~Сделать так чтобы данные с апи появились на странице (что будет на странице уже на твое усмотрение)~~
 
 # Links
 ## Preview pages
