@@ -102,10 +102,33 @@ function fetchUserAgentData() {
 }
 
 function fillVisitorBlock( data ) {
-    $("#visitor").append( '<p><i class="fa fa-globe fa-fw w3-xxlarge w3-margin-right"></i>' + data.software + " version " + data.software_value + '</p>');
+    var type = "fa-cubes";
+    if (!("os_name_value" in data)) {
+        data.os_name_value = 'N/A';
+    }
+    if (data.device_type == "Computer") {
+        type = "fa-laptop";
+    }
+    else if (data.device_type == "Mobile Phone") {
+        type = "fa-mobile";
+    }
+    else if (data.device_type == "Tablet") {
+        type = "fa-tablet";
+    }
+    if (data.os_name == "Linux") {
+        type = "fa-linux";
+    }
+
+    $("#visitor").append( '<p><i class="fa fa-globe fa-fw w3-xxlarge w3-margin-right"></i>' + data.software + " browser version " + data.software_value + '</p>');
     $("#visitor").append( '<p><i class="fa fa-code fa-fw w3-xxlarge w3-margin-right"></i>Based on ' + data.rendering_engine + ' engine version ' + data.rendering_engine_value + '</p>');
-    $("#visitor").append( '<p><i class="fa fa-laptop fa-fw w3-xxlarge w3-margin-right"></i>' + data.os_name + ' (' + data.os_platform + ')</p>');
-    $("#visitor").append( '<p><i class="fa fa-gear fa-fw w3-xxlarge w3-margin-right"></i>Working on ' + data.device_type + '</p>');
+    $("#visitor").append( '<p><i class="fa ' + type + ' fa-fw w3-xxlarge w3-margin-right"></i>' + data.os_name + ' (' + data.os_name_value + ')</p>');
+    if ("device_brand" in data) {
+        $("#visitor").append( '<p><i class="fa fa-trademark fa-fw w3-xxlarge w3-margin-right"></i>Device brand "' + data.device_brand + '"</p>');
+    }
+    if ("localization" in data) {
+        $("#visitor").append( '<p><i class="fa fa-language fa-fw w3-xxlarge w3-margin-right"></i>' + data.localization + ' localization</p>');
+    }
+    $("#visitor").append( '<p><i class="fa fa-database fa-fw w3-xxlarge w3-margin-right"></i>Raw data "' + data.raw + '"</p>');
 }
 
 /**
