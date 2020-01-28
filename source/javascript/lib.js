@@ -102,9 +102,10 @@ function fetchUserAgentData() {
 }
 
 function fillVisitorBlock( data ) {
-    $("#visitor").append( '<p><i class="fa fa-internet-explorer fa-fw w3-xxlarge w3-margin-right"></i>' + data.software + " version " + data.software_value + '</p>');
-    $("#visitor").append( '<p><i class="fa fa-desktop fa-fw w3-xxlarge w3-margin-right"></i>' + data.os_name + '</p>');
-    $("#visitor").append( '<p><i class="fa fa-gear fa-fw w3-xxlarge w3-margin-right"></i>' + data.os_platform + ' platform </p>');
+    $("#visitor").append( '<p><i class="fa fa-globe fa-fw w3-xxlarge w3-margin-right"></i>' + data.software + " version " + data.software_value + '</p>');
+    $("#visitor").append( '<p><i class="fa fa-code fa-fw w3-xxlarge w3-margin-right"></i>Based on ' + data.rendering_engine + ' engine version ' + data.rendering_engine_value + '</p>');
+    $("#visitor").append( '<p><i class="fa fa-laptop fa-fw w3-xxlarge w3-margin-right"></i>' + data.os_name + ' (' + data.os_platform + ')</p>');
+    $("#visitor").append( '<p><i class="fa fa-gear fa-fw w3-xxlarge w3-margin-right"></i>Working on ' + data.device_type + '</p>');
 }
 
 /**
